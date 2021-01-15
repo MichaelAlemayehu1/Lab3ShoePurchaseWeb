@@ -6,12 +6,14 @@
     <title>Shoe Purchase Website</title>
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
 </head>
 <body>
      <!-- navigation -->
      <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
        
-        <a class = "navbar-brand" href="index.html">Adshoe</a>
+        <a class = "navbar-brand" href="index.html"><i class="fas fa-shoe-prints mx-auto"></i>Adshoe</a>
        
        <!-- button -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#colNav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -50,15 +52,64 @@
     <div class="container">
         <div class="row justify-content-md-left">
             <div class="col-lg-6" >
-                <img src="assets/images/Shoe1.jpg" alt="">
+                <div class="row"><img src="assets/images/Shoe1.jpg" class="img-fluid" alt=""></div>
+                <div class="row form my-3">
+                    <form>
+                        <div class="form-row">
+                          <div class="form-group col-md-6">
+                            <label for="inputEmail4">Email</label>
+                            <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                          </div>
+                          <div class="form-group col-md-6">
+                            <label for="inputPassword4">Password</label>
+                            <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label for="inputAddress">Address</label>
+                          <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                        </div>
+                        <div class="form-group">
+                          <label for="inputAddress2">Address 2</label>
+                          <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                        </div>
+                        <div class="form-row">
+                          <div class="form-group col-md-6">
+                            <label for="inputCity">City</label>
+                            <input type="text" class="form-control" id="inputCity">
+                          </div>
+                          <div class="form-group col-md-4">
+                            <label for="inputState">State</label>
+                            <select id="inputState" class="form-control">
+                              <option selected>Choose...</option>
+                              <option>...</option>
+                            </select>
+                          </div>
+                          <div class="form-group col-md-2">
+                            <label for="inputZip">Zip</label>
+                            <input type="text" class="form-control" id="inputZip">
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="gridCheck">
+                            <label class="form-check-label" for="gridCheck">
+                              Check me out
+                            </label>
+                          </div>
+                        </div>
+                        <a href="login.html" type="submit" class="btn btn-primary">Submit</a> 
+
+                      </form>
+                </div>
             </div>
             <div class="col-lg-6"> 
                 <div class="row justify-md-left">
                     <div class="col-lg-auto">
-                        <h3 style="text-align: center;">BLUE BLACK NIKE AIR JORDANS</h3>
+                        <h3 style="text-align: center; font-family: 'Anton', sans-serif;;">BLUE BLACK NIKE AIR JORDANS</h3>
                     </div>
                     <div class="col-lg-auto">
-                        <h3 style="text-align: justify;"> $ 69.99</h3>
+                        <h3 style="text-align: justify; font-family: 'Pacifico', cursive;;"> $ 69.99</h3>
                     </div>
                 </div>
 
@@ -73,7 +124,7 @@
                 <div class="col-lg-auto">
 
                     <div class="dropdown">
-                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <button  class="btn btn-secondary dropdown-toggle mb-3" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                          Size
                         </button>
                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -87,7 +138,7 @@
                       </div>
                 </div>
                 <div class="col-lg-8 mx-auto my-auto">
-                    <button type="button" class="btn btn-secondary btn-lg btn-block ">Add to Cart</button>
+                    <button type="button" class="btn btn-secondary btn-lg btn-block "><i class="fas fa-shopping-cart mx-3"></i>Add to Cart </button>
                 </div>
                    
                 </div>
@@ -156,7 +207,7 @@
          <div class="row justify-content-md-center">
             <div class="col-lg-auto">
                 <div class="card mx-3 mb-1" style="width: 18rem;">
-                    <img src="assets/images/Shoe2.jpg" class="card-img-top" alt="...">
+                    <img src="assets/images/Shoe2.jpg" class="card-img-top img-fluid" alt="...">
                     <div class="card-body mx-3">
                       <p class="card-text">Burgundy Vans</p>
                     </div>
@@ -166,7 +217,7 @@
 
             <div class="col-lg-auto">
                 <div class="card mx-3 mb-1" style="width: 18rem;">
-                    <img src="assets/images/Shoe3.jpg" class="card-img-top" alt="...">
+                    <img src="assets/images/Shoe3.jpg" class="card-img-top img-fluid" alt="...">
                     <div class="card-body mx-3">
                       <p class="card-text">Black Air Nikes</p>
                     </div>
@@ -176,7 +227,7 @@
 
             <div class="col-lg-auto">
                 <div class="card mx-3 mb-1" style="width: 18rem;">
-                    <img src="assets/images/Shoe4.jpg" class="card-img-top" alt="...">
+                    <img src="assets/images/Shoe4.jpg" class="card-img-top img-fluid" alt="...">
                     <div class="card-body mx-3">
                       <p class="card-text">Cowboy Boots</p>
                     </div>
